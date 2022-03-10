@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RetroBlob
       objectReference: {fileID: 0}
+    - target: {fileID: 1970212983328296, guid: 9e9bd6e3f52e24df8abddf0c0a65c2af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4040829436048754, guid: 9e9bd6e3f52e24df8abddf0c0a65c2af, type: 3}
       propertyPath: m_RootOrder
       value: 1
