@@ -737,7 +737,7 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
-  BlockingMovementStates: 0200000004000000
+  BlockingMovementStates: 020000000400000001000000
   BlockingConditionStates: 04000000
   InitialWeapon: {fileID: 5907297113410173697, guid: 6ed5f2198500941459daabc0c0467110,
     type: 3}
