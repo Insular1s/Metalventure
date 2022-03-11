@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 5730473868096883690}
   - component: {fileID: 5730473868096883691}
   - component: {fileID: 5730473868096883688}
+  - component: {fileID: 1187828679}
   - component: {fileID: 5730473868096883689}
   - component: {fileID: 5730473868096883686}
   - component: {fileID: 5730473868096883687}
@@ -354,7 +355,7 @@ MonoBehaviour:
   CharacterHealth: {fileID: 0}
   SendStateChangeEvents: 1
   SendStateUpdateEvents: 1
-  AirborneDistance: 5
+  AirborneDistance: 3
   AirborneMinimumTime: 0.1
   CharacterBrain: {fileID: 0}
 --- !u!50 &5730473868096883694
@@ -596,7 +597,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5730473868096883702}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8071d2257235e403da6c6a0a966d6683, type: 3}
   m_Name: 
@@ -606,14 +607,48 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  CrawlAuthorized: 1
+  CrawlAuthorized: 0
   CrawlSpeed: 4
   ResizeColliderWhenCrouched: 0
   CrouchedBoxColliderSize: {x: 1, y: 1}
-  CanCrouchWhileMoving: 1
+  CanCrouchWhileMoving: 0
   InATunnel: 0
   MoveCameraTarget: 1
   CameraTargetOffset: {x: 0, y: -3, z: 0}
+--- !u!114 &1187828679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5730473868096883702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d317597e2b47bcb4e80316f1b372d79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 0e000000
+  BlockingConditionStates: 04000000
+  RollDuration: 0.3
+  RollSpeed: 2
+  BlockHorizontalInput: 0
+  PreventDamageCollisionsDuringRoll: 0
+  Aim:
+    AimControl: 2
+    RotationMode: 0
+    MinimumAngle: -180
+    MaximumAngle: 180
+    CurrentAngle: 0
+  MinimumInputThreshold: 0.1
+  FlipCharacterIfNeeded: 1
+  RollCooldown: 1
+  LimitedRolls: 0
+  SuccessiveRollsAmount: 1
+  SuccessiveRollsLeft: 1
+  SuccessiveRollsResetDuration: 2
 --- !u!114 &5730473868096883689
 MonoBehaviour:
   m_ObjectHideFlags: 0
