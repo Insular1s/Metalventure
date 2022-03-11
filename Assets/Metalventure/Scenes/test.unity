@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50584187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50584188}
+  - component: {fileID: 50584189}
+  m_Layer: 0
+  m_Name: CharacterSwitchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &50584188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50584187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50584189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50584187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606c87feb0a7ff84a931b47badc2315a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: Player1
+  PlayerIndex: 0
+  CharacterPrefabs:
+  - {fileID: 5730473868096883704, guid: a40b947012c1fb040bd1df7a59030ba1, type: 3}
+  - {fileID: 6767160394665339512, guid: 5520f706332a66840afd74de996cdeaa, type: 3}
+  NextCharacterChoice: 0
+  CurrentIndex: 0
+  CommonHealth: 0
+  CharacterSwitchVFX: {fileID: 56417129436140594, guid: 5e4084bc248da28418ce93f885e19412,
+    type: 3}
+  ForceCharacterSwitchButton: 0
+  DebugTargetIndex: 1
+  DebugCharacterSwitchToTargetIndexButton: 0
+  LinkedInputManager: {fileID: 0}
 --- !u!1001 &144675934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,7 +377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &219348458
 Transform:
   m_ObjectHideFlags: 0
