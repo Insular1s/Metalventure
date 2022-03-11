@@ -635,7 +635,7 @@ MonoBehaviour:
   RollDuration: 0.3
   RollSpeed: 2
   BlockHorizontalInput: 0
-  PreventDamageCollisionsDuringRoll: 0
+  PreventDamageCollisionsDuringRoll: 1
   Aim:
     AimControl: 2
     RotationMode: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
     CurrentAngle: 0
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
-  RollCooldown: 1
+  RollCooldown: 0.5
   LimitedRolls: 0
   SuccessiveRollsAmount: 1
   SuccessiveRollsLeft: 1
